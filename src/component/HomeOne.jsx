@@ -93,10 +93,10 @@ export default function HomePage() {
                 <span>{heroSlides[currentSlide].cta}</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
+              <a href="tel:8950648283"className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <span>Call Us Now</span>
-              </button>
+              </a>
             </div>
 
             {/* Slider Dots */}
