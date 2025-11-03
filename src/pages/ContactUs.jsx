@@ -60,8 +60,8 @@ export default function ContactUs() {
                   <p className="text-gray-600">
                     OPP. H.M.F, Block, PEHOWA<br />
                     Kaithal Road, City, PEHOWA<br />
-                    District: HARYANA<br />
-                    Near: SACHIN TYRE, KURUKSHETRA, Pin 136128
+                    Near: SACHIN TYRE, KURUKSHETRA, Pin 136128<br />
+                    State: HARYANA
                   </p>
                 </div>
               </div>
