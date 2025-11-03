@@ -42,9 +42,8 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-white"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : "bg-white"
+        }`}
       role="navigation"
       aria-label="Main navigation"
     >
@@ -70,21 +69,20 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 font-medium transition-colors duration-200 relative group ${
-                  location.pathname === link.path
+                className={`px-4 py-2 font-medium transition-colors duration-200 relative group ${location.pathname === link.path
                     ? "text-red-600"
                     : "text-gray-700 hover:text-red-600"
-                }`}
+                  }`}
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="https://wa.link/wrdiq4"
               className="ml-4 px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105"
             >
-              Get Quote
+              Whatsapp Us
             </Link>
           </div>
 
@@ -102,11 +100,10 @@ export default function Navbar() {
 
         {/* Mobile Dropdown */}
         <div
-          className={`md:hidden absolute left-0 right-0 top-full z-40 transform transition-all duration-300 ease-in-out ${
-            isOpen
+          className={`md:hidden absolute left-0 right-0 top-full z-40 transform transition-all duration-300 ease-in-out ${isOpen
               ? "translate-y-0 opacity-100 pointer-events-auto"
               : "-translate-y-4 opacity-0 pointer-events-none"
-          }`}
+            }`}
           id="mobile-menu"
         >
           <div className="bg-white shadow-md border-t">
@@ -116,22 +113,21 @@ export default function Navbar() {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 rounded-lg font-medium transition-colors duration-200 ${
-                    location.pathname === link.path
+                  className={`block px-4 py-3 rounded-lg font-medium transition-colors duration-200 ${location.pathname === link.path
                       ? "bg-red-50 text-red-600"
                       : "text-gray-700 hover:bg-red-50 hover:text-red-600"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
               ))}
 
               <Link
-                to="/contact"
+                to="https://wa.link/wrdiq4"
                 onClick={() => setIsOpen(false)}
                 className="block w-full mt-2 px-4 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-200 text-center"
               >
-                Get Quote
+                whatsapp us
               </Link>
             </div>
           </div>

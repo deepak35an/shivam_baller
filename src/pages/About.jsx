@@ -1,6 +1,7 @@
 import React from 'react';
 import { Target, Eye, Award, Users, TrendingUp, Heart, CheckCircle, Building, MapPin, Calendar } from 'lucide-react';
-
+import image from '../../public/images/image.png';
+import image2 from '../../public/images/image2.png';
 export default function AboutPage() {
   const milestones = [
     { year: "2020", title: "Company Established", desc: "Founded on May 12, 2020 in Pehowa, Kurukshetra" },
@@ -217,6 +218,56 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+
+      {/* my team section */}
+      
+
+      {/* Team Section */}
+      <div className="py-20 px-4 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        Meet Our Team
+      </h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Dedicated professionals committed to your agricultural success
+      </p>
+      <div className="w-24 h-1 bg-green-600 mx-auto mt-4"></div>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <div className="bg-gradient-to-br from-gray-50 to-green-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg overflow-hidden">
+          <img 
+            src={image} 
+            alt="Team Member 1"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-800 text-center mb-2">Shivam</h3>
+        <p className="text-green-600 font-semibold text-center mb-4">Position/Role</p>
+        <p className="text-gray-700 text-center leading-relaxed">
+          Brief description of their expertise and contribution to the company.
+        </p>
+      </div>
+
+      <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div className="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg overflow-hidden">
+          <img 
+            src={image2} 
+            alt="Team Member 2"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-800 text-center mb-2">Team Member 2</h3>
+        <p className="text-blue-600 font-semibold text-center mb-4">Position/Role</p>
+        <p className="text-gray-700 text-center leading-relaxed">
+          Brief description of their expertise and contribution to the company.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-green-600 to-blue-700 text-white py-16 px-4">
