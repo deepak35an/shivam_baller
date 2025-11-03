@@ -89,10 +89,10 @@ export default function HomePage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="px-8 py-4 bg-white text-green-700 rounded-lg font-semibold hover:bg-green-50 transform hover:scale-105 transition-all duration-200 shadow-xl flex items-center space-x-2">
-                <span>{heroSlides[currentSlide].cta}</span>
-                <ArrowRight className="w-5 h-5" />
-              </button>
+               <a href="https://wa.link/wrdiq4" className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
+                <Phone className="w-5 h-5" />
+                <span>Whatsapp Us</span>
+              </a>
               <a href="tel:8950648283"className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <span>Call Us Now</span>
