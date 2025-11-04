@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Tractor, Wrench, Package, Users, Award, TrendingUp, Phone, Mail, MapPin, ArrowRight, CheckCircle } from 'lucide-react';
-
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -8,17 +7,20 @@ export default function HomePage() {
     {
       title: "Empowering Farmers with Modern Solutions",
       subtitle: "Quality Agricultural Machinery Since 2020",
-      cta: "Explore Our Services"
+      cta: "Explore Our Services",
+      image: "/images/banner.jpeg"
     },
     {
       title: "Efficient Square Balers",
       subtitle: "Simplify Your Post-Harvest Management",
-      cta: "View Equipment"
+      cta: "View Equipment",
+      image: "/images/banner.jpeg"
     },
     {
       title: "Affordable Rental Solutions",
       subtitle: "Access Premium Machinery Without Heavy Investment",
-      cta: "Rental Options"
+      cta: "Rental Options",
+      image: "/images/banner.jpeg"
     }
   ];
 
@@ -69,10 +71,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Slider */}
-      <div className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-800 text-white overflow-hidden">
+      <div className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-800 text-white overflow-hidden bsolute inset-0 bg-center"
+        style={{ backgroundImage: `url(${heroSlides[currentSlide].image})` }}
+      >
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjAzIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 py-24 md:py-32">
           <div className="text-center">
             <div className="mb-6">
@@ -80,20 +84,20 @@ export default function HomePage() {
                 MSME Registered • UDYAM-HR-11-0016195
               </span>
             </div>
-            
+
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
               {heroSlides[currentSlide].title}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-green-50 max-w-3xl mx-auto">
               {heroSlides[currentSlide].subtitle}
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-               <a href="https://wa.link/wrdiq4" className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
+              <a href="https://wa.link/wrdiq4" className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <span>Whatsapp Us</span>
               </a>
-              <a href="tel:8950648283"className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
+              <a href="tel:8950648283" className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <span>Call Us Now</span>
               </a>
@@ -105,9 +109,8 @@ export default function HomePage() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? 'w-8 bg-white' : 'w-2 bg-white/50'
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${index === currentSlide ? 'w-8 bg-white' : 'w-2 bg-white/50'
+                    }`}
                 />
               ))}
             </div>
