@@ -8,19 +8,19 @@ export default function HomePage() {
       title: "Empowering Farmers with Modern Solutions",
       subtitle: "Quality Agricultural Machinery Since 2020",
       cta: "Explore Our Services",
-      image: "/images/banner.jpeg"
+      image: "/images/harvest-3682418_1920.jpg"
     },
     {
       title: "Efficient Square Balers",
       subtitle: "Simplify Your Post-Harvest Management",
       cta: "View Equipment",
-      image: "/images/banner.jpeg"
+      image: "images/deutz-3619140_1920.jpg"
     },
     {
       title: "Affordable Rental Solutions",
       subtitle: "Access Premium Machinery Without Heavy Investment",
       cta: "Rental Options",
-      image: "/images/banner.jpeg"
+      image: "/images/tractor-65765_1920.jpg"
     }
   ];
 
@@ -71,7 +71,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Slider */}
-      <div className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-800 text-white overflow-hidden bsolute inset-0 bg-center"
+      <div className="relative bg-gradient-to-br from-green-600 via-green-700 to-blue-800 text-white overflow-hidden bsolute inset-0 bg-center bg-cover"
         style={{ backgroundImage: `url(${heroSlides[currentSlide].image})` }}
       >
         <div className="absolute inset-0 bg-black opacity-40"></div>
