@@ -144,6 +144,13 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
+              <div className="mb-6">
+                <img
+                  src="/images/banner.jpeg"   // 👈 use your actual image path
+                  alt="Our Story"
+                  className="rounded-2xl shadow-xl w-full object-cover h-64 md:h-80"
+                />
+              </div>
               <div className="bg-gradient-to-br from-green-500 to-blue-600 rounded-2xl p-8 text-white shadow-2xl">
                 <h3 className="text-2xl font-bold mb-4">Our Story</h3>
                 <p className="mb-4 leading-relaxed">
