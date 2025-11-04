@@ -111,11 +111,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:shivamsaini376v@gmail.com"
+                href="mailto:ShivamSquareBaler@gmail.com"
                 className="flex items-center space-x-3 text-gray-400 hover:text-green-400 transition-colors break-all"
               >
                 <Mail className="w-5 h-5 text-green-500 flex-shrink-0" />
-                <span className="text-sm">shivamsaini376v@gmail.com</span>
+                <span className="text-sm">ShivamSquareBaler@gmail.com</span>
               </a>
 
               <div className="flex items-start space-x-3">

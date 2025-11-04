@@ -246,7 +246,7 @@ export default function HomePage() {
               <Phone className="w-5 h-5" />
               <span>+91 89506 48283</span>
             </a>
-            <a href="mailto:shivamsaini376v@gmail.com" className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center justify-center space-x-2">
+            <a href="mailto:ShivamSquareBaler@gmail.com" className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 flex items-center justify-center space-x-2">
               <Mail className="w-5 h-5" />
               <span>Email Us</span>
             </a>
@@ -282,7 +282,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5" />
-                <span className="text-sm">shivamsaini376v@gmail.com</span>
+                <span className="text-sm">ShivamSquareBaler@gmail.com</span>
               </div>
             </div>
           </div>

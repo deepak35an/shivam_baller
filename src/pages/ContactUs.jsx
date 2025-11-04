@@ -86,8 +86,8 @@ export default function ContactUs() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-                  <a href="mailto:shivamini3760@gmail.com" className="text-blue-600 hover:text-blue-700 transition-colors">
-                    shivamsaini3760@gmail.com
+                  <a href="mailto:ShivamSquareBaler@gmail.com" className="text-blue-600 hover:text-blue-700 transition-colors">
+                    ShivamSquareBaler@gmail.com
                   </a>
                 </div>
               </div>
